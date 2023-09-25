@@ -61,17 +61,15 @@ header .contenedor-texto .texto{
   padding: 20px 50px;
 }
 
+header .contenedor-texto .texto .nombre{
+  font-size: 2.5em;
+}
+
 header .contenedor-texto .texto h1,
 header .contenedor-texto .texto h2{
   color:#fff;
   /*en google fonts explica que 300 es el light, 400 el regular etc..*/
   font-weight: 300;
-}
-
-header .contenedor-texto .texto .nombre{
-  margin-bottom: 10px;
-  font-size: 45px;
-  line-height: 50px;
 }
 
 /*MAIN*/
@@ -95,6 +93,7 @@ header .contenedor-texto .texto .nombre{
   vertical-align: top;
   border-radius: 50%;
   border: 5px solid rgba(255,255,255,0.2);
+  width: 230px;
 }
 
 .main .acerca-de .texto{
@@ -136,12 +135,14 @@ header .contenedor-texto .texto .nombre{
   font-weight: 300;
   color:#323068;
   text-align: center;
+  text-decoration: none;
 }
 
 .main .trabajos .contenedor-trabajos{
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  text-decoration: none;
 }
 
 .main .trabajos .contenedor-trabajos .trabajo{
@@ -172,19 +173,49 @@ header .contenedor-texto .texto .nombre{
   opacity: 0.5;
 }
 
-.main .trabajos .contenedor-trabajos .trabajo .descripcion{
-  text-align: center;
-  margin: 30px;
+.icons {
+  margin-right: 10px;
+  font-size: 1.2em;
 }
 
-.main .trabajos .contenedor-trabajos .trabajo .descripcion .nombre{
+.html5 {
+  color: red;
+}
+
+.css3{
+  color: #264de4;
+}
+
+.js{
+  color: #F0DB4F;
+}
+
+.android{
+  color: #32DE84;
+}
+
+.docker{
+  color: #0db7ed;
+}
+
+.raspberry{
+  color: #C51A4A;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .descripcion{
+  text-align: center;
+  margin: 5px 0 30px 0;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .descripcion .nombreProyecto{
   font-weight: 600;
   color:#3895ea;
   margin-bottom: 10px;
+  text-decoration: none;
 }
 
 .main .trabajos .contenedor-trabajos .trabajo .descripcion .categoria{
-  color:#636363
+  color:#636363;
 }
 
 /*FOOTER*/
@@ -286,8 +317,8 @@ footer .redes a{
   transition: background .3s ease;
 }
 
-footer .redes .twitter:hover{
-  background: #1da1f2;
+footer .redes .github:hover{
+  background: #171515;
 
 }
 
@@ -311,7 +342,14 @@ footer .redes .youtube:hover{
   }
 
   header .contenedor-texto{
-    margin:80px 0;
+    margin:120px 0;
+    font-size: .80em;
+  }
+
+  .main .acerca-de .foto img{
+    width: 180px;
+    height: auto;
+    margin-top: 30px;
   }
 
   .trabajos .contenedor .contenedor-trabajos .trabajo{
@@ -325,6 +363,13 @@ footer .redes .youtube:hover{
   header .contenedor-texto .texto .nombre{
     font-size: 35px;
   }
+
+  .main .acerca-de .foto img{
+    width: 115px;
+    height: auto;
+    margin-top: 60px;
+  }
+
   header .contenedor-texto .texto .profesion{
     font-size: 25px;
   }
